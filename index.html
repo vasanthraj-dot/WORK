@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RuralConnect helps rural workers discover nearby opportunities and helps employers find local talent.">
+  <title>RuralConnect — Local work. Real opportunities.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="RuralConnect home">
+      <span class="brand-mark">R</span>
+      <span>rural<span class="brand-accent">connect</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#jobs">Find work</a>
+      <a href="#how">How it works</a>
+      <a href="#worker">For workers</a>
+      <a href="#employer">For employers</a>
+    </nav>
+    <a class="header-cta" href="#jobs">Explore opportunities <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> LOCAL OPPORTUNITIES, CLOSER TO HOME</div>
+        <h1>Your skills.<br><span>Closer opportunities.</span></h1>
+        <p class="hero-text">A simpler way for rural talent to find nearby work — and for local businesses to find the people they need.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#jobs">Find work <span>→</span></a>
+          <a class="button button-light" href="#employer">I’m hiring</a>
+        </div>
+        <div class="hero-note"><span class="note-icon">✓</span> Built around skills, distance and fair expectations.</div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a local job opportunity card">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-sun"></div>
+        <div class="art-hill hill-back"></div><div class="art-hill hill-front"></div>
+        <div class="floating-card">
+          <div class="card-topline"><span class="card-label">A GOOD MATCH NEAR YOU</span><span class="match-chip">92% fit</span></div>
+          <div class="mini-company"><span class="company-icon">⚙</span><div><strong>Greenfield Works</strong><small>Manufacturing · 5 km away</small></div></div>
+          <div class="mini-job">Skilled Welder</div>
+          <div class="mini-details"><span>₹750 <small>/ day</small></span><span>Full-time</span></div>
+          <div class="match-track"><span></span></div>
+          <div class="card-foot"><span>Skills aligned</span><span>View opportunity ↗</span></div>
+        </div>
+        <div class="art-caption"><span class="caption-icon">✦</span><span><strong>Local talent matters.</strong><br>Let opportunity find its way.</span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Platform benefits">
+      <div><span class="strip-icon">⌖</span><span><strong>Nearby first</strong><small>Discover work closer to home</small></span></div>
+      <div><span class="strip-icon">✳</span><span><strong>Skills matter</strong><small>Connect through what you can do</small></span></div>
+      <div><span class="strip-icon">♡</span><span><strong>Simple for everyone</strong><small>Clear details, fewer barriers</small></span></div>
+    </section>
+
+    <section class="section jobs-section" id="jobs">
+      <div class="section-heading">
+        <div><div class="eyebrow">FIND YOUR NEXT STEP</div><h2>Opportunities around you</h2><p class="section-intro">Explore local roles posted by employers. Use the search to find work that fits.</p></div>
+        <span class="sample-label">DEMO LISTINGS</span>
+      </div>
+      <div class="search-panel">
+        <label class="search-field"><span>⌕</span><input id="searchInput" type="search" placeholder="Search skill or job title" aria-label="Search skill or job title"></label>
+        <label class="search-field location-field"><span>⌖</span><input id="locationFilter" type="text" placeholder="Village or location" aria-label="Filter by location"></label>
+        <button class="button button-primary search-button" id="searchButton">Search jobs <span>→</span></button>
+      </div>
+      <div class="job-toolbar"><span id="jobCount">3 opportunities</span><span>New local listings appear here</span></div>
+      <div class="job-grid" id="jobList">
+        <article class="job-card">
+          <div class="job-card-top"><span class="job-icon">⚙</span><span class="job-type">FULL-TIME</span></div>
+          <h3>Skilled Welder</h3><p class="company-name">Greenfield Works</p>
+          <div class="job-meta"><span>⌖ Village A · 5 km</span><span>₹750 <small>/ day</small></span></div>
+          <div class="skill-tags"><span>Welding</span><span>Workshop</span></div>
+          <button class="text-button demo-apply">View opportunity <span>↗</span></button>
+        </article>
+        <article class="job-card">
+          <div class="job-card-top"><span class="job-icon purple">▦</span><span class="job-type">CONTRACT</span></div>
+          <h3>Production Helper</h3><p class="company-name">Sunrise Workshop</p>
+          <div class="job-meta"><span>⌖ Village A · 8 km</span><span>₹500 <small>/ day</small></span></div>
+          <div class="skill-tags"><span>General work</span><span>Manufacturing</span></div>
+          <button class="text-button demo-apply">View opportunity <span>↗</span></button>
+        </article>
+        <article class="job-card">
+          <div class="job-card-top"><span class="job-icon orange">✿</span><span class="job-type">DAILY WAGE</span></div>
+          <h3>Farm Assistant</h3><p class="company-name">Thendral Farms</p>
+          <div class="job-meta"><span>⌖ Village B · 7 km</span><span>₹650 <small>/ day</small></span></div>
+          <div class="skill-tags"><span>Farm work</span><span>Outdoor</span></div>
+          <button class="text-button demo-apply">View opportunity <span>↗</span></button>
+        </article>
+      </div>
+      <p class="empty-state hidden" id="emptyState">No jobs match your search yet. Try another skill or location.</p>
+    </section>
+
+    <section class="how-section" id="how">
+      <div class="section-heading centered">
+        <div class="eyebrow">A SIMPLE CONNECTION</div><h2>Less searching. Better connections.</h2>
+        <p class="section-intro">RuralConnect brings workers and employers together in a few clear steps.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card"><span class="step-number">01</span><div class="step-symbol">♙</div><h3>Share your skills</h3><p>Workers add their skills, preferred travel distance and expected daily wage.</p></article>
+        <article class="step-card"><span class="step-number">02</span><div class="step-symbol">▤</div><h3>Post local work</h3><p>Employers share the role, work location, required skill and wage offered.</p></article>
+        <article class="step-card"><span class="step-number">03</span><div class="step-symbol">✦</div><h3>Find a fit</h3><p>Compare opportunities using skill, distance and wage preferences.</p></article>
+      </div>
+    </section>
+
+    <section class="forms-section">
+      <div class="form-intro">
+        <div class="eyebrow">GET CONNECTED</div><h2>Start with one simple step.</h2>
+        <p>Whether you’re looking for work or looking for people, add your details below.</p>
+        <div class="form-illustration"><span>✦</span><div><strong>Local connections</strong><small>Start with your skills and your community.</small></div></div>
+      </div>
+      <div class="form-columns">
+        <form class="form-card" id="workerForm">
+          <div class="form-heading"><span class="form-icon">♙</span><div><h3>Looking for work?</h3><p>Create a worker profile</p></div></div>
+          <label>Your name<input id="workerName" required maxlength="60" placeholder="e.g. Ravi Kumar"></label>
+          <label>Your skill<input id="workerSkill" required maxlength="60" placeholder="e.g. Welding"></label>
+          <label>Village / location<input id="workerLocation" required maxlength="80" placeholder="e.g. Village A"></label>
+          <div class="input-row">
+            <label>Travel distance (km)<input id="workerDistance" type="number" min="1" max="500" required placeholder="10"></label>
+            <label>Expected wage / day (₹)<input id="workerWage" type="number" min="1" required placeholder="700"></label>
+          </div>
+          <button class="button button-primary full-button" type="submit">Create worker profile <span>→</span></button>
+          <p class="form-feedback" id="workerFeedback" role="status"></p>
+        </form>
+
+        <form class="form-card employer-card" id="jobForm">
+          <div class="form-heading"><span class="form-icon employer-icon">▤</span><div><h3>Need workers?</h3><p>Post a local opportunity</p></div></div>
+          <label>Business / factory name<input id="factoryName" required maxlength="70" placeholder="e.g. Greenfield Works"></label>
+          <label>Required skill<input id="requiredSkill" required maxlength="60" placeholder="e.g. Welding"></label>
+          <label>Work location<input id="jobLocation" required maxlength="80" placeholder="e.g. Village A"></label>
+          <div class="input-row">
+            <label>Distance from worker (km)<input id="jobDistance" type="number" min="0" max="500" required placeholder="5"></label>
+            <label>Daily wage (₹)<input id="jobWage" type="number" min="1" required placeholder="750"></label>
+          </div>
+          <button class="button button-dark full-button" type="submit">Publish opportunity <span>→</span></button>
+          <p class="form-feedback" id="jobFeedback" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="matching-section">
+      <div class="matching-copy"><div class="eyebrow">SMARTER DISCOVERY</div><h2>Find work that fits your priorities.</h2><p>Register as a worker, then compare available roles against your skill, preferred distance and expected wage.</p><a href="#worker" class="button button-primary">Create your profile <span>→</span></a></div>
+      <div class="match-preview">
+        <div class="preview-header"><span>YOUR MATCH PREVIEW</span><span class="preview-dot"></span></div>
+        <div class="preview-role"><span class="preview-company">GW</span><div><strong>Skilled Welder</strong><small>Greenfield Works</small></div><span class="preview-score">92%</span></div>
+        <div class="preview-bar"><span></span></div>
+        <div class="preview-stats"><span>Skill match<strong>Strong</strong></span><span>Distance<strong>5 km</strong></span><span>Daily wage<strong>₹750</strong></span></div>
+        <p class="preview-disclaimer">Illustrative match preview. Actual suitability depends on the details provided.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">R</span><span>rural<span class="brand-accent">connect</span></span></a>
+    <p>Helping local skills meet local opportunity.</p>
+    <span>© <span id="year"></span> RuralConnect · Prototype</span>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
